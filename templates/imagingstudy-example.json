@@ -1,0 +1,41 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "example",
+  "identifier": [
+    {
+      "system": "urn:dicom:uid",
+      "value": "None"
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/dicom"
+  },
+  "started": "2011-01-01T11:01:20+03:00",
+  "numberOfSeries": 1,
+  "numberOfInstances": 1,
+  "series": [
+    {
+      "uid": "None",
+      "number": 3,
+      "modality": {
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "code": "None"
+      },
+      "description": "None",
+      "numberOfInstances": 1,
+      "bodySite": {
+        "system": "http://snomed.info/sct",
+        "code": "123037004",
+        "display": "Body structure"
+      },
+      "endpoint": [
+        {
+          "reference": "None"
+        }
+      ],
+      "instance": []
+    }]
+}
+    
+

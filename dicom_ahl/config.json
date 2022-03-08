@@ -1,0 +1,18 @@
+{"environment": "development",
+"region": "us-east-1",
+"log_level": "info",
+"dicom":{
+  "source_bucket_prefix": "dicom-ahl-ingest",
+  "template_bucket_prefix": "dicom-ahl-templates",
+  "sop_instance_bytes_to_read": 100000
+},
+"fhir":{
+  "template_key": "imagingstudy-example.json",
+  "template_map_key": "imagingstudy-example-map.json" 
+},
+"healthlake":{
+  "healthlake_host": "healthlake.us-east-1.amazonaws.com",
+  "healthlake_endpoint": "https://healthlake.<Add your endpoint here>/r4/"
+  }
+}
+    

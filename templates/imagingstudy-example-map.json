@@ -1,0 +1,12 @@
+{"template_map":
+[
+{"key":"(0020,000D)", "variable": "study_instance_uid", "description": "(0020,000D) Study Instance UID", "location": ["identifier", 0, "value"]},
+{"key":"(0020,000E)", "variable":"series_instance_uid", "description": "(0020,000E) UI SeriesInstanceUID", "location": ["series", 0, "uid"]},
+{"key":"(0010,0020)", "variable": "pat_id", "description": "(0010,0020) Patient ID", "location": ["subject", "reference"],"prefix":"Patient/"},
+{"key":"(0008,0020)", "variable": "study_date", "description": "(0008,0020) DA StudyDate, Type = Date (DA)", "location": ["started"]},
+{"key":"(0008,0060)", "variable": "modality", "description": "(0008,0060) CS Modality", "location": ["series", 0, "modality", "code"]},
+{"key":"(0018,0015)", "variable": "body_part", "description": "(0018,0015) CS BodyPartExamined", "location": ["series", 0, "bodySite", "display"]}
+],
+"tags_to_fhir": ["(0020,000D)","(0020,000E)","(0010,0020)","(0008,0060)","(0018,0015)"],
+"s3_url_location": ["series",0,"endpoint",0,"reference"]
+}
