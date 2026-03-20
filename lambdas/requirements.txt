@@ -1,2 +1,2 @@
-pydicom==2.1.2
+pydicom==2.4.5
 requests==2.32.0
